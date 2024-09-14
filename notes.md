@@ -6,6 +6,7 @@ You need to install LESS as a dev dependency for Vite to handle LESS files:
 
 ````bash
 npm install -D less
+````
 
 ### 2. Configure Vite for LESS
 
@@ -26,7 +27,7 @@ export default defineConfig({
     },
   },
 });
-
+````
 ### 3. Import Your LESS File in React
 
 You can now import your LESS file directly in your React component just like regular CSS:
