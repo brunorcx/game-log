@@ -1,8 +1,7 @@
-// src/routes/game.tsx
-
-import GameForm from "../components/game-form/GameForm";
-import { handleFormSubmission } from "../server/actions/action"; // Adjust path if needed
-import { validateGameForm } from "../validations/validateGameForm"; // Adjust path if needed
+import GameForm from "../../components/game-form/GameForm";
+import { handleFormSubmission } from "../../server/actions/action";
+import { validateGameForm } from "../../validations/validateGameForm";
+import NestedPage from "./nested";
 
 export const action = async ({ request }: { request: Request }) => {
   // Get FormData from request
@@ -18,6 +17,7 @@ export default function GamePage() {
     <div>
       <h1>Game Form</h1>
       <GameForm />
+      <NestedPage />
     </div>
   );
 }
