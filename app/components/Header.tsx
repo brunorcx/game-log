@@ -1,6 +1,5 @@
-// src/components/Header.tsx
-
 import { NavLink } from "@remix-run/react";
+import "../styles/header.less";
 
 export default function Header() {
   return (
