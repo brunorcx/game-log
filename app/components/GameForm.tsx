@@ -1,8 +1,8 @@
 import { Form, useActionData, useNavigation } from "@remix-run/react";
 import { useState, useEffect } from "react";
 import classNames from "classnames";
-import "../../styles/game-form.less";
-import { ActionData } from "../../interfaces/game-form/game-form";
+import "../styles/game-form.less";
+import { ActionData } from "../interfaces/game-form/game-form";
 
 function ValidationMessage({ error, isSubmitting }: { error: string | null; isSubmitting: boolean }) {
   const [show, setShow] = useState(!!error);

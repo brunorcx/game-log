@@ -1,7 +1,7 @@
-import GameForm from "../../components/game-form/GameForm";
-import { handleFormSubmission } from "../../server/actions/action";
-import { validateGameForm } from "../../validations/validateGameForm";
-import NestedPage from "./nested";
+import Layout from "~/components/Layout";
+import GameForm from "~/components/GameForm";
+import { handleFormSubmission } from "~/server/actions/action";
+import { validateGameForm } from "~/validations/validateGameForm";
 
 export const action = async ({ request }: { request: Request }) => {
   // Get FormData from request
@@ -12,12 +12,10 @@ export const action = async ({ request }: { request: Request }) => {
 };
 
 export default function GamePage() {
-  // Render your GameForm component here
   return (
-    <div>
+    <Layout>
       <h1>Game Form</h1>
       <GameForm />
-      <NestedPage />
-    </div>
+    </Layout>
   );
 }
